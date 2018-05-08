@@ -1,0 +1,74 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url("../images/diagmonds.png");
+    background-color: midnightblue;
+}
+
+h1 {
+    background-color: aqua;
+    padding: 5px;
+}
+
+.col-6 {
+    background-color: tan;
+    color: green;
+}
+
+#random-number {
+    background-color: green;
+    height: 100px;
+    margin-top: 20px;
+    color: black;
+}
+
+#score {
+    background-color: teal;
+    height: 100px;
+    margin-left: 20px;
+    margin-top: 20px;
+    color: black
+}
+
+#crystal1 {
+    background-color: red;
+    height: 100px;
+    margin-top: 10px;
+}
+
+#crystal2 {
+    background-color:blue;
+    height: 100px;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+#crystal3 {
+    background-color: purple;
+    height: 100px;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+#crystal4 {
+    background-color: orange;
+    height: 100px;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+#total-score {
+    background-color: teal;
+    height: 50px;
+    margin-top: 10px;
+    color: white;
+}
+
+#user-score {
+    background-color: teal;
+    height: 100px;
+    margin-top: 10px;
+    color: white;
+}
