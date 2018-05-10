@@ -26,3 +26,28 @@
 // * The random number shown at the start of the game should be between 19 - 120.
 
 // * Each crystal should have a random hidden value between 1 - 12.
+
+// Define variables
+var numToMatch = Math.floor(Math.random() *120) +19;
+console.log(numToMatch);
+var crystalNumberOne = Math.floor(Math.random() *12) +1;
+var crystalNumberTwo = Math.floor(Math.random() *12) +1;
+var crystalNumberThree = Math.floor(Math.random() *12) +1;
+var crystalNumberFour = Math.floor(Math.random() *12) +1;
+console.log(crystalNumberFour);
+var score = 0;
+var crystalAdder = crystalNumberOne + crystalNumberTwo + crystalNumberThree + crystalNumberFour;
+console.log(crystalAdder);
+var wins = 0;
+var losses = 0;
+
+$(document).ready(function() {
+    $("#random-number").text(numToMatch);
+    $("#score").text(score);
+    $("#crystal1").text(crystalNumberOne);
+    $("#crystal2").text(crystalNumberTwo);
+    $("#crystal3").text(crystalNumberThree);
+    $("#crystal4").text(crystalNumberFour);
+    // on click, add crystal number to score number; crystal number should probably be a for loop
+
+});
