@@ -33,11 +33,10 @@ h1 {
 }
 
 #crystal1 {
-    background-image: url("../images/diamond-colorful.png");
     background-color: red;
     height: 100px;
     margin-top: 10px;
-    display: hidden;
+    /* display: hidden; */
 }
 
 #crystal2 {

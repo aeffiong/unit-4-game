@@ -29,25 +29,233 @@
 
 // Define variables
 var numToMatch = Math.floor(Math.random() *120) +19;
-console.log(numToMatch);
 var crystalNumberOne = Math.floor(Math.random() *12) +1;
 var crystalNumberTwo = Math.floor(Math.random() *12) +1;
 var crystalNumberThree = Math.floor(Math.random() *12) +1;
 var crystalNumberFour = Math.floor(Math.random() *12) +1;
-console.log(crystalNumberFour);
-var score = 0;
-var crystalAdder = crystalNumberOne + crystalNumberTwo + crystalNumberThree + crystalNumberFour;
-console.log(crystalAdder);
 var wins = 0;
 var losses = 0;
+var score = 0;
+// var crystals = $("#crystals-spot");
+// console.log(crystalNumbers);
+// var numberChoices = crystalNumbers[Math.floor(Math.random() *12) +1];
+// console.log(numberChoices);
+
+// var crystalAdder = crystalNumberOne + crystalNumberTwo + crystalNumberThree + crystalNumberFour;
+// console.log(crystalAdder);
+
 
 $(document).ready(function() {
     $("#random-number").text(numToMatch);
-    $("#score").text(score);
-    $("#crystal1").text(crystalNumberOne);
-    $("#crystal2").text(crystalNumberTwo);
-    $("#crystal3").text(crystalNumberThree);
-    $("#crystal4").text(crystalNumberFour);
-    // on click, add crystal number to score number; crystal number should probably be a for loop
+    score = 0;
+    $("#user-score").text(score);
+    
+    // $(".crystal").text(crystalNumbers);
+    // $("#crystal2").text(crystalNumbers);
+    // $("#crystal3").text(crystalNumbers);
+    // $("#crystal4").text(crystalNumbers);
+
+    // for(var i = 0; i < crystalNumbers.length; i++) {
+        // var crystalInfo = $(".crystals");
+        // // crystal.addClass("crystal-image");
+
+        // crystalInfo.attr("data-crystalvalue", crystalNumbers[i]);
+        // // console.log(crystalNumbers[i]);
+      function reset() {
+        numToMatch = Math.floor(Math.random() *120) +19;
+        $("#random-number").text(numToMatch);
+        score = 0;
+        $("#user-score").text(score);
+        crystalNumberOne = Math.floor(Math.random() *12) +1;
+        crystalNumberTwo = Math.floor(Math.random() *12) +1;
+        crystalNumberThree = Math.floor(Math.random() *12) +1;
+        crystalNumberFour = Math.floor(Math.random() *12) +1;
+      }
+
+    // on click, add crystal number to score number
+    $("#crystal1").on("click", function() {
+        score = score + crystalNumberOne;
+        $("#user-score").text(score);
+
+        if(score === numToMatch) {
+            wins++;
+            alert("You win!!");
+            $("#wins").text("Wins: " + wins);
+            reset();
+        }
+            
+    
+        else if(score > numToMatch) {
+            losses++;
+            alert("You lose!!");
+            $("#losses").text("Losses: " + losses);
+            reset();
+            
+            
+        }
+    
+    });
+    $("#crystal2").on("click", function() {
+        score = score + crystalNumberTwo;
+        $("#user-score").text(score);
+
+        if(score === numToMatch) {
+            wins++;
+            alert("You win!!");
+            $("#wins").text("Wins: " + wins);
+            reset();
+        }
+    
+        else if(score > numToMatch) {
+            losses++;
+            alert("You lose!!");
+            $("#losses").text("Losses: " + losses);
+            reset();
+        }
+       
+    });
+    $("#crystal3").on("click", function() {
+        score = score + crystalNumberThree;
+        $("#user-score").text(score);
+
+        if(score === numToMatch) {
+            wins++;
+            alert("You win!!");
+            $("#wins").text("Wins: " + wins);
+            reset();
+        }
+    
+        else if(score > numToMatch) {
+            losses++;
+            alert("You lose!!");
+            $("#losses").text("Losses: " + losses);
+            reset();
+        }
+        
+    });
+    $("#crystal4").on("click", function() {
+        score = score + crystalNumberFour;
+        $("#user-score").text(score);
+
+        if(score === numToMatch) {
+            wins++;
+            alert("You win!!");
+            $("#wins").text("Wins: " + wins);
+            reset();
+        }
+    
+        else if(score > numToMatch) {
+            losses++;
+            alert("You lose!!");
+            $("#losses").text("Losses: " + losses);
+            reset();
+        }
+         
+    });
+
+    // add numbers together
+    // function adder() {
+    //     score += crystalNumberFour ++;
+    //     score += crystalNumberThree;
+    //     score += crystalNumberTwo;
+    //     score += crystalNumberOne;
+    // }
+
+    // determines wins and losses
+    if(score === numToMatch) {
+        wins++;
+        alert("You win!!");
+        $("#score").text("Wins: " + wins);
+        // $("#random-number").text(numToMatch);
+        // $("#user-score").text(score);
+    }
+
+    if(score > numToMatch) {
+        losses++;
+        alert("You lose!!");
+        $("#score").text("Losses: " + losses);
+        // $("#random-number").text(numToMatch);
+        // $("#user-score").text(score);
+    }
 
 });
+
+
+
+
+
+
+
+// try 2
+// // Define variables
+// var numToMatch = Math.floor(Math.random() *120) +19;
+// console.log(numToMatch);
+// var crystalNumbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12];
+// // var crystalNumberOne;
+// // var crystalNumberTwo = Math.floor(Math.random() *12) +1;
+// // var crystalNumberThree = Math.floor(Math.random() *12) +1;
+// // var crystalNumberFour = Math.floor(Math.random() *12) +1;
+// var wins = 0;
+// var losses = 0;
+// var score = 0;
+// // var crystals = $("#crystals-spot");
+// // console.log(crystalNumbers);
+// // var numberChoices = crystalNumbers[Math.floor(Math.random() *12) +1];
+// // console.log(numberChoices);
+
+// // var crystalAdder = crystalNumberOne + crystalNumberTwo + crystalNumberThree + crystalNumberFour;
+// // console.log(crystalAdder);
+
+
+// $(document).ready(function() {
+//     $("#random-number").text(numToMatch);
+//     $("#user-score").text(score);
+//     // $(".crystal").text(crystalNumbers);
+//     // $("#crystal2").text(crystalNumbers);
+//     // $("#crystal3").text(crystalNumbers);
+//     // $("#crystal4").text(crystalNumbers);
+
+//     for(var i = 0; i < crystalNumbers.length; i++) {
+//         // var crystalInfo = $(".crystals");
+//         // // crystal.addClass("crystal-image");
+
+//         // crystalInfo.attr("data-crystalvalue", crystalNumbers[i]);
+//         // // console.log(crystalNumbers[i]);
+      
+//     }
+//     // on click, add crystal number to score number
+//     $("#crystals-spot").on("click", function() {
+//         var crystalValue = crystalNumbers[i];
+//         crystalValue = parseInt(crystalValue);
+//         $("#user-score").text( crystalValue += score);
+//         console.log(crystalValue);
+
+
+         
+//     });
+//     // $("#crystal2").on("click", function() {
+//     //     $("#total-score").text(crystalNumberTwo += score);
+       
+//     // });
+//     // $("#crystal3").on("click", function() {
+//     //     $("#total-score").text(crystalNumberThree += score);
+        
+//     // });
+//     // $("#crystal4").on("click", function() {
+//     //     $("#total-score").text(crystalNumberFour += score);
+         
+//     // });
+
+//     if(score === numToMatch) {
+//         wins++;
+//         alert("You win!!");
+//         $("#score").text("Wins: " + wins);
+//     }
+
+//     if(score > numToMatch) {
+//         losses++;
+//         alert("You lose!!");
+//         $("#score").text("Losses: " + losses);
+//     }
+
+// });
