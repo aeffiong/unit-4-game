@@ -3,25 +3,31 @@
 }
 
 body {
-    background-image: url("../images/diagmonds.png");
-    background-color: midnightblue;
+    background-image: url("../images/background.png");
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    
 }
 
 h1 {
-    background-color: aqua;
+    background-color: teal;
     padding: 5px;
+    margin-left: -15px;
+    color: white;
 }
 
 .col-6 {
     background-color: tan;
-    color: green;
+    color: black;
 }
 
 #random-number {
-    background-color: green;
+    background-color: teal;
     height: 100px;
     margin-top: 20px;
-    color: black;
+    color: white;
+    font-weight: 500px;
+    font-size: 20px;
+    text-align: center;
 }
 
 #score {
@@ -29,32 +35,33 @@ h1 {
     height: 100px;
     margin-left: 20px;
     margin-top: 20px;
-    color: black
+    color: white;
+    
 }
 
 #crystal1 {
-    background-color: red;
+    background-color: tan;
     height: 100px;
     margin-top: 10px;
     /* display: hidden; */
 }
 
 #crystal2 {
-    background-color:blue;
+    background-color:tan;
     height: 100px;
     margin-left: 10px;
     margin-top: 10px;
 }
 
 #crystal3 {
-    background-color: purple;
+    background-color: tan;
     height: 100px;
     margin-left: 10px;
     margin-top: 10px;
 }
 
 #crystal4 {
-    background-color: orange;
+    background-color: tan;
     height: 100px;
     margin-left: 10px;
     margin-top: 10px;
@@ -72,4 +79,7 @@ h1 {
     height: 100px;
     margin-top: 10px;
     color: white;
+    font-weight: 500px;
+    font-size: 20px;
+    text-align: center;
 }
