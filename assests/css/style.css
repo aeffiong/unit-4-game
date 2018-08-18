@@ -5,7 +5,15 @@
 body {
     background-image: url("../images/background.png");
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: center;
     
+}
+
+.centered {
+    margin: 0 auto;
+    text-align: center;
+    justify-content: center;
+    width: 1050px;
 }
 
 h1 {
@@ -21,64 +29,57 @@ h1 {
 }
 
 #random-number {
-    background-color: teal;
     height: 100px;
     margin-top: 20px;
-    color: white;
+    color: teal;
     font-weight: 500px;
-    font-size: 20px;
+    font-size: 50px;
     text-align: center;
 }
 
 #score {
-    background-color: teal;
     height: 100px;
     margin-left: 20px;
     margin-top: 20px;
-    color: white;
+    color: teal;
+    font-size: 20px;
     
 }
 
 #crystal1 {
-    background-color: tan;
     height: 100px;
     margin-top: 10px;
     /* display: hidden; */
 }
 
 #crystal2 {
-    background-color:tan;
     height: 100px;
-    margin-left: 10px;
+    margin-left: 50px;
     margin-top: 10px;
 }
 
 #crystal3 {
-    background-color: tan;
     height: 100px;
-    margin-left: 10px;
+    margin-left: 50px;
     margin-top: 10px;
 }
 
 #crystal4 {
-    background-color: tan;
     height: 100px;
-    margin-left: 10px;
+    margin-left: 50px;
     margin-top: 10px;
 }
 
 #total-score {
-    background-color: teal;
     height: 50px;
     margin-top: 10px;
-    color: white;
+    color: teal;
 }
 
 #user-score {
-    background-color: teal;
     height: 100px;
     margin-top: 10px;
-    color: white;
+    color: teal;
     font-weight: 500px;
     font-size: 20px;
     text-align: center;
